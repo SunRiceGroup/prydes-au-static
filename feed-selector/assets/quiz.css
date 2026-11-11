@@ -1,0 +1,66 @@
+@font-face {
+  font-family: Canberra;
+  src: url('../fonts/CanberraFY-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: Canberra;
+  src: url('../fonts/CanberraFY-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  color: #1c3a68;
+  font: 1rem Canberra, Georgia, serif;
+  text-align: center;
+}
+#quiz {
+  max-width: 62rem;
+  padding: 1rem;
+  margin: auto;
+}
+h1 {
+  margin: 0 0 1.25rem;
+  font-size: clamp(1.35rem, 3.4vw, 2rem);
+}
+h1:focus { outline: none; }
+.quiz-choices, .quiz-controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+button {
+  padding: .7rem 1rem;
+  border: 1px solid #31539b;
+  border-radius: 4px;
+  background: #fff;
+  color: #1c3a68;
+  font: inherit;
+  cursor: pointer;
+}
+button:hover, button:focus-visible {
+  background: #1c3a68;
+  color: #fff;
+}
+.quiz-controls { margin-top: 1rem; }
+.quiz-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  gap: 1rem;
+}
+.pr_recProduct {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: .5rem;
+  color: #1c3a68;
+  font-weight: 700;
+}
+.pr_recProduct img {
+  width: 100%;
+  max-width: 10rem;
+}
